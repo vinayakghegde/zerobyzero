@@ -1,8 +1,8 @@
-namespace app.dashboard {
+namespace app.tourismmain {
   'use strict';
 
   angular
-    .module('app.dashboard')
+    .module('app.tourismmain')
     .config(configureStates);
 
   configureStates.$inject = ['$stateProvider'];
@@ -17,16 +17,16 @@ namespace app.dashboard {
   function getStates() {
     return [
       {
-        state: 'dashboard',
+        state: 'tourismmain',
         config: {
           url: '/',
-          templateUrl: 'app/dashboard/dashboard.html',
-          controller: 'DashboardController',
+          templateUrl: 'app/tourismmain/tourismmain.html',
+          controller: 'TourismmainController',
           controllerAs: 'vm',
-          title: 'dashboard',
+          title: 'tourism',
           settings: {
             nav: 1,
-            content: '<i class="fa fa-dashboard"></i> Dashboard'
+            content: '<i class="fa fa-plane"></i> Tourism'
           }
         }
       }
